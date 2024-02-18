@@ -1,9 +1,82 @@
 /* google fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
-/* general rules */
+/* general rules */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
 
+i{
+    color: #fff;
+    cursor: pointer;
 
-/*main style */
+}
+
+img{
+    object-fit: cover;
+    object-position: top;
+    border-radius: 8px;
+}
+
+html,
+body{
+    background: linear-gradient(#751cc9, #1324be);
+    height: 100vh;
+}
+/* main style and sidebar menu */
+
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+    background: linear-gradient(#751cc9, #1324be);
+}
+
+.container .sidebar{
+    height: 100vh;
+    background-color: #1324be;
+    padding: 20px 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10000;
+    transition: all 0.6s ease;
+
+}
+
+.container .sidebar .logo{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-right: 5px;
+
+}
+
+.container .sidebar .logo > img{
+    width: 50px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+
+.container .sidebar .logo a{
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.container .sidebar .logo:hover a,
+.container .sidebar .logo:hover i{
+ color: #8325b9;
+}
+.container .sidebar .playing .top img{
+    width: 20px;
+
+}
